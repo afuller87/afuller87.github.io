@@ -1,1 +1,39 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Simon Memory Game</title>
+</head>
+<body>
+
+<div class="game-container">
+    <!-- Game Board -->
+    <div class="game-board">
+        <div class="color-button" id="color1"></div>
+        <div class="color-button" id="color2"></div>
+        <div class="color-button" id="color3"></div>
+        <div class="color-button" id="color4"></div>
+    </div>
+
+    <!-- Display Game Score -->
+    <div class="score-display">
+        <p>Level: <span id="level-display">1</span></p>
+        <p>Score: <span id="score-display">0</span></p>
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="control-buttons">
+        <button id="start-button">Start</button>
+        <button id="try-again-button">Try Again</button>
+        <button id="game-over-button">Game Over</button>
+        <button id="toggle-music-button">Toggle Music</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
+
