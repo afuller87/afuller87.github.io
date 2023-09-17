@@ -1,1 +1,193 @@
+body {
+    background-color: darkslateblue;
+  }
+  
+  #controls {
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 28px;
+    margin-top: 34px;
+  }
+
+  .button {
+    position: absolute;
+    border-radius: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: lightsteelblue;
+    top: -30px;
+    left: 388px;  
+    color: darkgreen;
+    border-style: dashed;
+    border-color: black;
+    cursor: pointer;
+  }
+
+  .toggle {
+    margin-top: 30px;
+    margin-left: 385px;
+    cursor: pointer;
+  }
+  
+  .text2 {
+    position: absolute;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 93px;
+    margin-top: 200px;
+    color: black;
+  }
+  
+  .text1 {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 433px;
+    margin-top: 61px;
+    color: black;
+  }
+
+  .text1 span:nth-child(1) {
+    display: block;
+    padding-bottom: 29px;
+  }
+
+  .text1 span:nth-child(2) {
+    display: block;
+    padding-bottom: 29px;
+  }
+  
+  #title {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: absolute;
+    font-size: 50px;
+    margin-left: 32px;
+    margin-top: 85px;
+  }
+
+  #score {
+    position: absolute;
+    background: lightsteelblue;
+    color: red;
+    font-size: 30px;
+    height: 40px;
+    width: 65px;
+    border-radius: 10%;
+    margin-left: 85px;
+    margin-top: 159px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  
+  #big-circle {
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-style: solid;
+    border-width: 6px;
+    margin: auto;
+    margin-top: 97px;
+    box-shadow: 1px 1px 17px 3px white;
+    cursor: pointer;
+  }
+  
+  #topleftbutton {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    -moz-border-radius: 250px 0 0 0;
+    -webkit-border-radius: 250px 0 0 0;
+    background: darkgreen;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  #toprightbutton {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    -moz-border-radius: 0 250px 0 0;
+    -webkit-border-radius: 0 250px 0 0;
+    background: darkred;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  #bottomleftbutton {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    -moz-border-radius: 0 0 0 250px;
+    -webkit-border-radius: 0 0 0 250px;
+    background: goldenrod;
+    top: 50%;
+    left: 50%;
+    margin: 0px -250px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  #bottomrightbutton {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+    -moz-border-radius: 0 0 250px 0;
+    -webkit-border-radius: 0 0 250px 0;
+    background: darkblue;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px -250px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  #small-circle {
+    position: absolute;
+    background: lightblue;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 9px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  #topleftbutton:hover,
+  #toprightbutton:hover,
+  #bottomleftbutton:hover,
+  #bottomrightbutton:hover {
+  opacity: 0.7;
+}
 
