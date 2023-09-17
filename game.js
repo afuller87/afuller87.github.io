@@ -46,6 +46,7 @@ startButton.addEventListener('click', () => {
 });
 
 function play() {
+  clearInterval(intervalId);
   win = false;
   order = [];
   playerOrder = [];
@@ -216,11 +217,11 @@ function check() {
   }
 
   if (score == playerOrder.length && good && !win) {
-    score++;
     playerOrder = [];
     compScore = true;
     flash = 0;
     scoreCounter.innerHTML = score;
+    score++;
     intervalId = setInterval(gameScore, 800);
   }
 }
