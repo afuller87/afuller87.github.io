@@ -23,6 +23,22 @@
 </head>
 
 <body>
+  <div id="how-to-play-modal" class="modal">
+    <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>How to Play</h2>
+    <p>1. Press the "Play" button to start the game.</p>
+    <p>2. Memorize the sequence of lights and sounds.</p>
+    <p>3. Repeat the sequence by pressing the corresponding quadrants.</p>
+    <p>4. If you make a mistake, you will hear an error sound with a "NO!" alert.</p>
+    <p>5. Reach level 10, and you will see "WIN!"</p>
+    <h3>Strict Mode</h3>
+    <p>1. Enable "Strict Mode" by toggling the "STRICT" checkbox.</p>
+    <p>2. In "Strict Mode", if you make a mistake, the game will reset, and you'll have to start from 0.</p>
+    <p>3. Challenge yourself to complete the game without making a single mistake!</p>
+  </div>
+</div>
+
 <div id="big-circle">
     <div id="topleftbutton"></div>
     <div id="toprightbutton"></div>
@@ -39,7 +55,7 @@
       
     </div>
       <div class="text1">
-        <span>POWER</span>
+        <span>ON/OFF</span>
         <span>SOUND</span>
         <span>STRICT</span>
       </div>
@@ -47,7 +63,26 @@
       <div class="text2">SCORE</div>
     </div>
   </div>
-
+  
+  <script>
+    var modal = document.getElementById("how-to-play-modal");
+    var span = document.getElementsByClassName("close-btn")[0];
+  
+    window.onload = function() {
+      modal.style.display = "block";
+    }
+  
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  
   <script src="game.js"></script>
 
 </body>

@@ -6,7 +6,6 @@ let good;
 let compScore;
 let intervalId;
 let strict = false;
-let noise = true;
 let on = false;
 let win;
 
@@ -18,6 +17,26 @@ const bottomRightButton = document.querySelector("#bottomrightbutton");
 const strictButton = document.querySelector("#strict");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
+
+let soundOn = document.getElementById('sound')
+
+function playSound(soundNumber) {
+    let audioElement = document.getElementById('simonSound' + soundNumber);
+    audioElement.play();
+}
+
+function getButtonAndPlaySound (btnId, soundNumber) {
+  document.getElementById(btnId).addEventListener('click', function() {
+    if (soundOn.checked) {
+      playSound(soundNumber)
+    }
+  });
+}
+
+getButtonAndPlaySound ('topleftbutton', 1)
+getButtonAndPlaySound ('toprightbutton', 2)
+getButtonAndPlaySound ('bottomleftbutton', 3)
+getButtonAndPlaySound ('bottomrightbutton', 4)
 
 strictButton.addEventListener('click', () => {
   if (strictButton.checked == true) {
@@ -86,38 +105,34 @@ function gameScore() {
 }
 
 function one() {
-  if (noise) {
+  if (soundOn.checked) {
     let audio = document.getElementById("simonSound1");
     audio.play();
   }
-  noise = true;
   topLeftButton.style.backgroundColor = "lightgreen";
 }
 
 function two() {
-  if (noise) {
+  if (soundOn.checked) {
     let audio = document.getElementById("simonSound2");
     audio.play();
   }
-  noise = true;
   topRightButton.style.backgroundColor = "tomato";
 }
 
 function three() {
-  if (noise) {
+  if (soundOn.checked) {
     let audio = document.getElementById("simonSound3");
     audio.play();
   }
-  noise = true;
   bottomLeftButton.style.backgroundColor = "yellow";
 }
 
 function four() {
-  if (noise) {
+  if (soundOn.checked) {
     let audio = document.getElementById("simonSound4");
     audio.play();
   }
-  noise = true;
   bottomRightButton.style.backgroundColor = "lightskyblue";
 }
 
@@ -191,11 +206,7 @@ function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
 
-  if (playerOrder.length == 10 && good) {
-    winGame();
-  }
-
-  if (good == false) {
+  if (!good) {
     flashColor();
     scoreCounter.innerHTML = "NO!";
     setTimeout(() => {
@@ -212,8 +223,11 @@ function check() {
         intervalId = setInterval(gameScore, 800);
       }
     }, 800);
+    return;
+  }
 
-    noise = false;
+  if (playerOrder.length == 20 && good) {
+    winGame();
   }
 
   if (score == playerOrder.length && good && !win) {
@@ -225,6 +239,7 @@ function check() {
     intervalId = setInterval(gameScore, 800);
   }
 }
+
 
 function winGame() {
   flashColor();
