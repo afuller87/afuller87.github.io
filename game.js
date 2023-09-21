@@ -72,7 +72,7 @@ function play() {
   flash = 0;
   intervalId = 0;
   score = 1;
-  scoreCounter.innerHTML = 0;
+  scoreCounter.innerHTML = score;
   good = true;
   for (var i = 0; i < 20; i++) {
     order.push(Math.floor(Math.random() * 4) + 1);
@@ -239,7 +239,6 @@ function check() {
     intervalId = setInterval(gameScore, 800);
   }
 }
-
 
 function winGame() {
   flashColor();
