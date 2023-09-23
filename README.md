@@ -9,7 +9,7 @@ Simon Memory Game is a classic memory and pattern recognition game that tests a 
 5. Reach a score of 10, and you will see a "WIN 🏆"!
 ## Strict Mode
 1. Enable "Strict Mode" by toggling the "STRICT" checkbox.
-2. In "Strict Mode", if you make a mistake, the game will reset, and you'll have to start from 0.
+2. In "Strict Mode", if you make a mistake, the game will reset, and you'll have to start over.
 3. Challenge yourself to complete the game without making a single mistake!
 
 ## User Stories
