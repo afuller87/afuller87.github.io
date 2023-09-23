@@ -2,12 +2,12 @@ let sequence = []; // array to store the random sequence selected by the compute
 let playerSequence = []; // array to store the sequence selected by the player
 let currentStep; // variable to keep track of the current sequence in the game
 let score; // variable to keep track of the player's score
-let playerInput; // boolean variable to see if player's input and computer sequence matches
-let compSequence; // boolean variable to control whether the computer is showing the sequence
+let playerInput; // variable to see if player's input and computer sequence matches
+let compSequence; // variable to control whether the computer is showing the sequence
 let intervalId; // variable to store the ID of the intervals used for the computer's display sequence
-let strict = false; // boolean variable to determine if game is in strict mode
-let on = false; // boolean variable to control whether game is turned on
-let win; // boolean variable to track whether the player has won the game
+let strict = false; // variable to determine if game is in strict mode
+let on = false; // variable to control whether game is turned on
+let win; // variable to track whether the player has won the game
 
 // DOM elements to select specific HTML ID's
 const scoreCounter = document.querySelector("#score");

@@ -37,7 +37,6 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-
   #controls {
     position: absolute;
     font-family:'Times New Roman', Times, serif;
@@ -66,7 +65,7 @@ body {
     cursor: pointer;
   }
   
-  .text2 {
+  .scoretext {
     position: absolute;
     font-family:'Times New Roman', Times, serif;
     font-size: 14px;
@@ -76,7 +75,7 @@ body {
     color: black;
   }
   
-  .text1 {
+  .toggletext {
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -85,12 +84,12 @@ body {
     color: black;
   }
 
-  .text1 span:nth-child(1) {
+  .toggletext span:nth-child(1) {
     display: block;
     padding-bottom: 28px;
   }
 
-  .text1 span:nth-child(2) {
+  .toggletext span:nth-child(2) {
     display: block;
     padding-bottom: 29px;
   }
