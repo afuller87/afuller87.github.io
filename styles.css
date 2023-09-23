@@ -1,5 +1,5 @@
 body {
-  background-color: darkslateblue;
+  background-color: lightgreen;
 }
 
 .modal {
@@ -41,8 +41,8 @@ body {
   #controls {
     position: absolute;
     font-family:'Times New Roman', Times, serif;
-    margin-left: 28px;
-    margin-top: 34px;
+    margin-left: 2px;
+    margin-top: 3px;
   }
 
   .button {
@@ -51,9 +51,9 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
     font-weight: bold;
-    background-color: lightsteelblue;
-    top: -28px;
-    left: 389px;  
+    background-color: lightgoldenrodyellow;
+    top: -25px;
+    left: 391px;  
     color: darkgreen;
     border-style: dashed;
     border-color: black;
@@ -71,8 +71,8 @@ body {
     font-family:'Times New Roman', Times, serif;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 91px;
-    margin-top: 200px;
+    margin-left: 59px;
+    margin-top: 150px;
     color: black;
   }
   
@@ -80,8 +80,8 @@ body {
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-left: 433px;
-    margin-top: 61px;
+    margin-left: 408px;
+    margin-top: 30px;
     color: black;
   }
 
@@ -99,24 +99,24 @@ body {
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     position: absolute;
-    font-size: 50px;
-    margin-left: 32px;
-    margin-top: 85px;
+    font-size: 44px;
+    margin-left: 12px;
+    margin-top: 40px;
   }
 
   #score {
     position: absolute;
-    background: darkseagreen;
-    color: red;
-    font-size: 25px;
-    height: 40px;
-    width: 65px;
+    background: green;
+    color: lightgoldenrodyellow;
+    font-size: 30px;
+    height: 45px;
+    width: 100px;
     border-radius: 10%;
-    margin-left: 83px;
-    margin-top: 159px;
+    margin-left: 34px;
+    margin-top: 102px;
     text-align: center;
     vertical-align: middle;
-    line-height: 42px;
+    line-height: 47px;
   }
   
   #big-circle {
@@ -124,11 +124,10 @@ body {
     height: 500px;
     width: 500px;
     position: relative;
-    border-style: solid;
-    border-width: 6px;
-    margin: auto;
+    border-width: 15px;
+    margin: 29%;
     margin-top: 97px;
-    box-shadow: 1px 1px 17px 3px white;
+    box-shadow: 1px 1px 20px 10px;
     cursor: pointer;
   }
   
@@ -139,12 +138,12 @@ body {
     border-radius: 250px 0 0 0;
     -moz-border-radius: 250px 0 0 0;
     -webkit-border-radius: 250px 0 0 0;
-    background: darkgreen;
+    background: blue;
     top: 50%;
     left: 50%;
     margin: -250px 0px 0px -250px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -157,12 +156,12 @@ body {
     border-radius: 0 250px 0 0;
     -moz-border-radius: 0 250px 0 0;
     -webkit-border-radius: 0 250px 0 0;
-    background: darkred;
+    background: palevioletred;
     top: 50%;
     left: 50%;
     margin: -250px 0px 0px 0px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -175,12 +174,12 @@ body {
     border-radius: 0 0 0 250px;
     -moz-border-radius: 0 0 0 250px;
     -webkit-border-radius: 0 0 0 250px;
-    background: goldenrod;
+    background: darkorange;
     top: 50%;
     left: 50%;
     margin: 0px -250px 0px -250px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -193,12 +192,12 @@ body {
     border-radius: 0 0 250px 0;
     -moz-border-radius: 0 0 250px 0;
     -webkit-border-radius: 0 0 250px 0;
-    background: darkblue;
+    background: purple;
     top: 50%;
     left: 50%;
     margin: 0px 0px -250px 0px;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -206,14 +205,14 @@ body {
   
   #small-circle {
     position: absolute;
-    background: lightblue;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    background: lightgoldenrodyellow;
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
     border-style: solid;
-    border-width: 9px;
-    top: 50%;
-    left: 50%;
+    border-width: 15px;
+    top: 55%;
+    left: 55%;
     margin: -125px 0px 0px -125px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;

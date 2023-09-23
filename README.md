@@ -2,11 +2,11 @@
 Simon Memory Game is a classic memory and pattern recognition game that tests a players ability to remember and repeat increasingly complex sequences of colors. The game features four colorful buttons (red, blue, green, and yellow) that light up in a specific sequence. The goal is to repeat the sequence correctly to advance to the next level. Be careful, though! One wrong move, and the player will have to restart the sequence. Reach a score of 10 to claim victory!
 
 ## How to Play
-1. Press the "Play" button to start the game. 
+1. Press the "Play" button to start the 🎮. 
 2. Memorize the sequence of lights and sounds. 
 3. Repeat the sequence by pressing the corresponding quadrants.
-4. If you make a mistake, you will hear an error sound with a "NO!" alert.
-5. Reach level 10, and you will see "WIN!"
+4. If you make a mistake, you will hear an error sound with a ❌ signal.
+5. Reach a score of 10, and you will see a "WIN 🏆"!
 ## Strict Mode
 1. Enable "Strict Mode" by toggling the "STRICT" checkbox.
 2. In "Strict Mode", if you make a mistake, the game will reset, and you'll have to start from 0.
@@ -35,6 +35,7 @@ Simon Memory Game is a classic memory and pattern recognition game that tests a 
 
 ## Stretch Goals
 - As a developer, I want to optimize the game's code and performance, so that it runs smoothly and efficiently for players.
-- As a developer, I want to create the original shape of the Simon game (this will be very challenging!).
+- As a developer, I want to mimic the original shape of the Simon game (this will be very challenging!).
 - As a developer, I want to create strict mode, so that the game becomes more challenging, and a single mistake results in starting over.
+- As a developer, I want to implement a timer in strict mode that would require a player to complete the game before the time runs out.
 - As a developer, I want to regularly update and improve the game, so that it remains fun and engaging over time.
