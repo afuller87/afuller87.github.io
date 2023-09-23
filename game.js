@@ -250,7 +250,7 @@ function check() {
     winGame(); 
   }
 
-  // prepares the game to reset after all conditions have been met and a win is declared
+  // player successfully completes the sequence, their score increases and the game progresses to the next sequence
   if (score == playerSequence.length && playerInput && !win) {
     playerSequence = [];
     compSequence = true;
